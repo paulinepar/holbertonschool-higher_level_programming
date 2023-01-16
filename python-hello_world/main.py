@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("C is fun!")
+print(f"Best School: {88+10}")
