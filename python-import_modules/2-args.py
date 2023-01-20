@@ -11,4 +11,4 @@ elif length == 2:
 elif length > 2:
     print("{} arguments:".format((length - 1)))
     for i in range(1, length):
-            print("{}: {}".format(i, argv[i]))
+        print("{}: {}".format(i, argv[i]))
