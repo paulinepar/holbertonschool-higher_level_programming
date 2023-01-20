@@ -10,4 +10,3 @@ else:
     for i in range(1, length):
         sum += int(argv[i])
     print("{}".format(sum))
-    
