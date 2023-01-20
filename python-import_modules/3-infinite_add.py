@@ -3,10 +3,11 @@ if __name__ == "__main__":
     from sys import argv
     length = len(argv)
     sum = 0
-    
+
 if length == 0:
     print("{}".format(0))
 else:
     for i in range(1, length):
         sum += int(argv[i])
     print("{}".format(sum))
+    
