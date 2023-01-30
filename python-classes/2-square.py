@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-class Square:
+"""Create an empty class."""
 
+
+class Square():
+    """An empty class Square.
+    """
     def __init__(self, size=0):
         self.__size = size
 
