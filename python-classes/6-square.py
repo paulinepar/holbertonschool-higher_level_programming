@@ -10,12 +10,10 @@ class Square():
         self.__position = position
 
     @property
-    #getter of size
     def size(self):
         return self.__size
 
     @size.setter
-    #setter of size
     def size(self, value):
         self.__size = value
         if type(value) is not int:
@@ -27,12 +25,10 @@ class Square():
         return self.__size ** 2
 
     @property
-    #getter of position
     def position(self):
         return self.__position
 
     @position.setter
-    #setter of position
     def position(self, value):
         if type(value) is not tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
