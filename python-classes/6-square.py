@@ -43,7 +43,7 @@ class Square():
             return print()
         else:
             for esp in range(self.__position[1]):
-                print(end="\n" if self.__position[1] > 0 else "")
+                print()
             for i in range(self.__size):
                 for esp in range(self.__position[0]):
                     print(end=" ")
