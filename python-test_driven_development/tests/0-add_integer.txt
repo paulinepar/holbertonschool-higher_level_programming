@@ -19,7 +19,7 @@
 >>> add_integer(-2, 100.3)
 98
 
->>> add_integer(4, "School")
+>>> add_integer(4, "2")
 'b must be an integer'
 
 >>> add_integer(None)
