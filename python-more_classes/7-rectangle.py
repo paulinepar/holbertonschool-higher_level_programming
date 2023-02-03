@@ -15,6 +15,7 @@ class Rectangle():
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
+        Rectangle.print_symbol
 
     @property
     def height(self):
@@ -50,15 +51,15 @@ class Rectangle():
         return p
 
     def __str__(self):
-        hashtag = ""
+        string = ""
         if self.__height == 0 or self.__width == 0:
             return ""
         for i in range(self.__height):
             for j in range(self.__width):
-                hashtag += '#'
+                string += str(self.print_symbol)
             if i + 1 < self.__height:
-                hashtag += '\n'
-        return hashtag
+                string += '\n'
+        return string
 
     def __repr__(self):
         repre = 'Rectangle(' + str(self.width) + ', ' + str(self.height) + ')'
