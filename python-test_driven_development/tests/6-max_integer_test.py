@@ -18,8 +18,8 @@ class TestMaxInteger(unittest.TestCase):
     def test_neg_pos_elements(self):
         self.assertEqual(max_integer([-1, 3, -1, 4]), 4)
 
-    def empty_test_list(self):
-        self.assertEqual(max_integer([]), None)
+    def empty_list(self):
+        self.assertEqual(max_integer(None), None)
     
     if __name__ == '__main__':
         unittest.main()
