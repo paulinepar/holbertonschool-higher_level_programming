@@ -48,7 +48,7 @@ class Rectangle():
     def __str__(self):
         hashtag = ""
         if self.__height == 0 or self.__width == 0:
-            print()
+            return
         for i in range(self.__height):
             for j in range(self.__width):
                 hashtag += '#'
