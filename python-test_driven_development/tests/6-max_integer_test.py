@@ -12,6 +12,9 @@ class TestMaxInteger(unittest.TestCase):
     def test_positive_elements(self):
         self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
 
+    def test_maxmiddle_elements(self):
+        self.assertEqual(max_integer([1, 2, 5, 4, 3]), 5)
+
     def test_negative_elements(self):
         self.assertEqual(max_integer([-1, -2, -3, -5]), -1)
 
@@ -19,7 +22,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, 3, -1, 4]), 4)
 
     def empty_list(self):
-        self.assertEqual(max_integer(None), None)
+        self.assertEqual(max_integer(""), None)
     
     if __name__ == '__main__':
         unittest.main()
