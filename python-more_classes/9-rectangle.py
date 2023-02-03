@@ -17,7 +17,6 @@ class Rectangle():
         Rectangle.number_of_instances += 1
         Rectangle.print_symbol
 
-    
     @property
     def height(self):
         return self.__height
