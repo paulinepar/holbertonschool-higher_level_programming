@@ -57,5 +57,5 @@ class Rectangle():
         return hashtag
 
     def __repr__(self):
-        repre = 'Rectangle(' + str(self.width) + ',' + str(self.height) + ')'
+        repre = 'Rectangle(' + str(self.width) + ', ' + str(self.height) + ')'
         return repre
