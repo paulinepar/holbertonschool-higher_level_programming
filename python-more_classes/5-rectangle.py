@@ -61,4 +61,4 @@ class Rectangle():
         return repre
 
     def __del__(self):
-        print("Bye rectangle ...")
+        print("Bye rectangle...")
