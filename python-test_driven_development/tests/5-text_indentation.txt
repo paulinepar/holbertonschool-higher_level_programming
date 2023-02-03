@@ -1,19 +1,15 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 >>> text_indentation("commovere ? Plus semper voluptatis? finem illi videri nihil dolere. Fortasse id optimum, sed ubi illud: 0, 1, 2")
-beatiorem!
-<BLANKLINE>
 commovere ?
 <BLANKLINE>
-vicimus.
+Plus semper voluptatis?
 <BLANKLINE>
-sed ubi illud:
+finem illi videri nihil dolere.
 <BLANKLINE>
-0
+Fortasse id optimum, sed ubi illud:
 <BLANKLINE>
-1
-<BLANKLINE>
-2
+0, 1, 2
 
 >>> text_indentation()
 Traceback (most recent call last):
