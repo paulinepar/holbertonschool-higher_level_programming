@@ -5,8 +5,9 @@
 
 
 def text_indentation(text):
-    '''function that print a text with 2 lines after each of these characters: .,?,:'''
-    
+    '''function that print a text with 2 lines \
+        after each of these characters: .,?,:'''
+
     special = False
     if type(text) is not str:
         raise TypeError("text must be a string")
