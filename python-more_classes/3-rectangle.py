@@ -51,16 +51,7 @@ class Rectangle():
             print()
         for i in range(self.__height):
             for j in range(self.__width):
-                hashtag += "#"
-            #hashtag += "\n"
-            #i += + 1
+                hashtag += '#'
             if i + 1 < self.__height:
-                hashtag += "\n"
+                hashtag += '\n'
         return hashtag
-    
-    '''my_print(self):
-        if self.__height == 0 or width == 0:
-            print()
-        for i in range(str(self.__width)):
-            for j in range(str(self.height)):
-                print("{#}".format(str(self.__height), str(self.__width), end=""))'''
