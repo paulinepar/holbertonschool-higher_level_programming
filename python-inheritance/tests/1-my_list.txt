@@ -1,11 +1,11 @@
->>> MyList = __import__('1-my_list').MyList
+>>> MyList = __import__('1-MyList').MyList
 
 >>> print(MyList)
 []
 
->>> my_list.print_sorted()
+>>> MyList.print_sorted()
 
->>> my_list.append(4)
-    my_list.append(2)
-    my_list.append(3)
-    my_list.append(5)
+>>> MyList.append(4)
+    MyList.append(2)
+    MyList.append(3)
+    MyList.append(5)
