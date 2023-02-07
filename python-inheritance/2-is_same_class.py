@@ -6,4 +6,5 @@
 
 
 def is_same_class(obj, a_class):
+    '''function is_same_class'''
     return (obj == a_class)
