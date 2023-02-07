@@ -1,5 +1,5 @@
 >>> MyList = __import__('1-my_list').MyList
-my_list = []
+m>>> my_list = []
 
 >>> print(my_list)
 []
