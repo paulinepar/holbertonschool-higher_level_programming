@@ -1,11 +1,11 @@
 >>> MyList = __import__('1-my_list').MyList
->>> my_list = []
+>>> my_list = my_list()
 
 >>> print(my_list)
 []
 
 >>> my_list.print_sorted()
-    Traceback (most recent call last):
+    Traceback (most recent call last)
     AttributeError: 'list' object has no attribute 'print_sorted'
 
 >>> my_list.append(2)
