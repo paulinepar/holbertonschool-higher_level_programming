@@ -3,9 +3,10 @@
     Write a class Square that inherits from Rectangle (9-rectangle.py):
 '''
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     '''class Square'''
