@@ -6,5 +6,4 @@ import json
 
 def to_json_string(my_obj):
     '''function that return JSON'''
-    my_obj_new = json.dumps(my_obj)
-    print(type(my_obj_new))
+    print(json.dumps(my_obj))
