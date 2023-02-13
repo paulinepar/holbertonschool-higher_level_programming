@@ -2,10 +2,8 @@
 '''
     Write the class Rectangle that inherits from Base:
 '''
-
-
 Base = __import__('base.py').base
-'''import from base.py'''
+
 
 class Rectangle(Base):
     '''class Rectangle that inherits from base'''
