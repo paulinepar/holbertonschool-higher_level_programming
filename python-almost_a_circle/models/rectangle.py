@@ -65,3 +65,14 @@ class Rectangle(Base):
     def area(self):
         '''function area of rectangle'''
         return self.__height * self.__width
+
+    def display(self):
+        hashtag = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                hashtag += '#'
+            if i + 1 < self.__height:
+                hashtag += '\n'
+        return hashtag
