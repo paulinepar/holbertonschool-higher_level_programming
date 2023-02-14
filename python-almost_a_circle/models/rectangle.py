@@ -67,6 +67,7 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
+        '''funtion print hashtag'''
         hashtag = ""
         if self.__height == 0 or self.__width == 0:
             return ""
