@@ -8,7 +8,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.id = id
         self.width = width
         self.height = height
         self.x = x
@@ -68,10 +67,18 @@ class Rectangle(Base):
 
     def display(self):
         '''funtion print hashtag'''
-        hashtag = ""
-        if self.__height == 0 or self.__width == 0:
-            return ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print('#', end="")
-            print()
+        if self.__width == 0 or self.__height == 0:
+            return print()
+        else:
+            for esp in range(self.__y):
+                print()
+            for i in range(self.__height):
+                for esp in range(self.__x):
+                    print(end=" ")
+                for j in range(self.__width):
+                    print("#", end="")
+                print()
+
+    def __str__(self):
+        '''function update class rectangle'''
+        return (f'[Rectangle]({self.id}) {self.x}/{self.y} - {self.width}/{self.height}')
