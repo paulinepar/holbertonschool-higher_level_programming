@@ -73,7 +73,5 @@ class Rectangle(Base):
             return ""
         for i in range(self.__height):
             for j in range(self.__width):
-                hashtag += '#'
-            if i + 1 < self.__height:
-                hashtag += '\n'
-        return hashtag
+                print('#', end="")
+            print()
