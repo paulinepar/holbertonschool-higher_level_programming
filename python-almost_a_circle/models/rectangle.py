@@ -81,8 +81,8 @@ class Rectangle(Base):
 
     def __str__(self):
         '''function update class rectangle'''
-        return (f'[Rectangle]({self.id}) {self.x}/{self.y} \
-- {self.width}/{self.height}')
+        return ('[Rectangle]({}) {}/{} - {}/{}'.format
+        (self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
         '''function args'''
