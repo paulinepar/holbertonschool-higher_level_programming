@@ -47,6 +47,17 @@ class Base():
     def create(cls, **dictionary):
         dummy = cls(1, 1)
         dummy.x = 0
-        dummy.y = 0
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        try:
+            list = []
+            with open(cls.__name__+".json", "r") as file:
+                for dic in cls.from_json_string(file.read()):
+                    list.append(cls.create(**dic))
+            file.close()
+            return list
+        except:
+            return []
