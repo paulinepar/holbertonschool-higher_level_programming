@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # execution de la requête SQL
     cur.execute("SELECT * FROM states WHERE name \
-                LIKE 'N%' ORDER BY id ASC")
+                LIKE BINARY 'N%' ORDER BY id ASC")
 
     # recuperation des resultats
     results = cur.fetchall()
