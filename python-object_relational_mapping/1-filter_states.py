@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # requete SQL pour selectionner les eats qui commencent par la lettre N
     filter = "SELECT * FROM states WHERE states.name \
-              LIKE 'N%' ORDER BY states.id ACS"
+              LIKE BINARY 'N%' ORDER BY states.id ACS"
 
     # execution de la requête SQL
     cur.execute(filter)
