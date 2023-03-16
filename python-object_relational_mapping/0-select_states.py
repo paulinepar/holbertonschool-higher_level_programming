@@ -27,6 +27,3 @@ if __name__=='__main__':
     for row in results:
         print(row)
 
-# fermeture de la base de données
-        cur.close()
-        db.close()
