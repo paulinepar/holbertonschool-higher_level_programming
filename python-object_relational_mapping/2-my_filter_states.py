@@ -18,7 +18,7 @@ if __name__ == '__main__':
     cur = db.cursor()
 
     # execution de la requête SQL
-    cur.execute("SELECT * FROM states WHERE name LIKE '{:s}' \
+    cur.execute("SELECT * FROM states WHERE name LIKE INARY '{:s}' \
                 ORDER BY states.id ASC".format(sys.argv[4]))
 
     # recuperation des resultats
