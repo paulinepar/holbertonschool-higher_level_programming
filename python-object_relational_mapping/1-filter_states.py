@@ -17,12 +17,9 @@ if __name__ == '__main__':
     # creation de l'objet cursor
     cur = db.cursor()
 
-    # requete SQL pour selectionner les eats qui commencent par la lettre N
-    filter = "SELECT * FROM states WHERE states.name \
-              LIKE BINARY 'N%' ORDER BY states.id ACS"
-
     # execution de la requête SQL
-    cur.execute(filter)
+    cur.execute("SELECT * FROM states WHERE states.name \
+                LIKE BINARY 'N%' ORDER BY states.id ACS")
 
     # recuperation des resultats
     results = cur.fetchall()
