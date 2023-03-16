@@ -18,8 +18,8 @@ if __name__ == '__main__':
     cur = db.cursor()
 
     # execution de la requête SQL
-    cur.execute("SELECT * FROM states WHERE name \
-                LIKE 'N%' ORDER BY id ACS")
+    cur.execute("SELECT * FROM states WHERE states.name \
+                LIKE BINARY 'N%' ORDER BY states.id ASC")
 
     # recuperation des resultats
     results = cur.fetchall()
