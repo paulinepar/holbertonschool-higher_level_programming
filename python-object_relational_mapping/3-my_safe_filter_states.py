@@ -6,17 +6,29 @@ import sys
 
 if __name__ == "__main__":
 
-    db = MySQLdb.connect(host="localhost",
-                         port=3306,
-                         user=sys.argv[1],
-                         passwd=sys.argv[2],
-                         db=sys.argv[3])
+    # Recover argument from user
+    user = sys.argv[1]
+    pswd = sys.argv[2]
+    db_name = sys.argv[3]
+    search_name = sys.argv[4]
 
+    # connect database
+    db = MySQLdb.connect(host='localhost', user=user,
+                         passwd=pswd, db=db_name, port=3306)
+
+    # create cursor
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name=%s\
-                ORDER BY states.id ASC", (sys.argv[4],))
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
+
+    # executing MySQL Queries in Python
+    querry = """SELECT * FROM states WHERE name \
+                = %s ORDER BY states.id ASC"""
+    cur.execute(querry, (search_name,))
+
+    # display
+    search_state = cur.fetchall()
+    for state in search_state:
+        print(state)
+
+    # close cursor & db
     cur.close()
     db.close()
