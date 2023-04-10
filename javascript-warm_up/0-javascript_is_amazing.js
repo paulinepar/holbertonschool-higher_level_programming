@@ -2,4 +2,4 @@
 
 const myVar = 'JavaScript is amazing';
 
-console.log(myVar.startsWith('JavaScript'));
+console.log(myVar);
