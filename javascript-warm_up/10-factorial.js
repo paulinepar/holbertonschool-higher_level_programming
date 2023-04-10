@@ -9,7 +9,7 @@ You must use a function
 You must use console.log(...) to print all output
 You are not allowed to use var
 */
-const nbr = parseInt(process.argv[2])
+const nbr = parseInt(process.argv[2]);
 
 function fact (nbr) {
   if (nbr === 0 || isNaN(nbr)) {
