@@ -14,5 +14,5 @@ You must use a loop (while, for, etc.)
 const threeLines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 for (let count = 0; count < threeLines.length; count++) {
-  console.log(myString[count]);
+  console.log(threeLines[count]);
 }
