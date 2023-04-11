@@ -3,7 +3,7 @@
 Write an empty class Rectangle that defines a rectangle:
 You must use the class notation for defining your class
 */
-
-export class Rectangle {
+class Rectangle {
     
 }
+module.export = Rectangle;
