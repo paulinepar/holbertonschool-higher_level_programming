@@ -7,5 +7,5 @@ You are not allowed to use var
 */
 // exports to make the add function visible from outside
 exports.add = function (a, b) {
-    return a + b;
-}
+  return a + b;
+};
