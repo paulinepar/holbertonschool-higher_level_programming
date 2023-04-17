@@ -1,12 +1,9 @@
 #!/usr/bin/node
 
-const axios = require('axios');
+const request = require('request');
 const url = process.argv[2];
-axios
-  .get(url)
-  .then((response) => {
-    console.log('code: ' + response.status);
-  })
-  .catch((error) => {
-    console.log('code: ' + error.response.status);
-  });
+request(url, (error, response) => {
+  if (error) 
+    console.log(error);
+  console.log('Code: ' + response.statusCode);
+});
