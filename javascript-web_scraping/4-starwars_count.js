@@ -10,7 +10,7 @@ request.get(url, (error, response, body) => {
   let NBR_OF_MOVIES = 0;
 
   for (const film of data.results) {
-    if (film.characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
+    if (film.characters.includes('/api/people/18/')) {
       NBR_OF_MOVIES++;
     }
   }
