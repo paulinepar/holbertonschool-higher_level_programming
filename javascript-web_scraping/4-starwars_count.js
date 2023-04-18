@@ -10,8 +10,8 @@ request.get(url, (error, response, body) => {
   const data = JSON.parse(body);
   let nbr_of_movies = 0;
 
-  for (const film of data.results) {
-    if (film.results.includes(`${url}people/${id}/`)) {
+  for (let film of data.results) {
+    if (film.characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
       nbr_of_movies++;
     }
   }
